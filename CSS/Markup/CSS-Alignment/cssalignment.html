@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        
+        p{
+            text-align: justify;
+        }
+        .container{
+            width: 900px;
+            border: 2px solid rgb(245, 131, 55);
+            margin: auto;/*for center alignment*/
+            background-color:rgb(245, 188, 224);
+
+        }
+        .items{
+            border: 2px solid rgb(125, 7, 136);
+            margin: 4px 4px;
+            padding: 2px 2px;
+            background: rgb(234, 238, 243);
+
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+
+        }
+        #computer{
+            float: right;
+            width: 48%;
+        }
+        #stationary{
+            clear: both;/*no overlapping*/
+            width: 98%;
+
+        }
+        h1{
+            margin: auto;
+            width: 400px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to your Store</h1>
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum numquam
+                inventore unde. Error, expedita atque tempora explicabo at porro earum repudiandae. Eligendi cum quasi
+                ratione qui saepe fugiat quis quod!
+                Error odit, quaerat officiis quidem adipisci deserunt cumque ipsum eius corporis rerum.</p>
+        </div>
+
+
+        <div id="computer" class="items">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum numquam
+                inventore unde. Error, expedita atque tempora explicabo at porro earum repudiandae. Eligendi cum quasi
+                ratione qui saepe fugiat quis quod!
+                Error odit, quaerat officiis quidem adipisci deserunt cumque ipsum eius corporis rerum.</p>
+        </div>
+
+        <div id="stationary" class="items">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum numquam
+                inventore unde. Error, expedita atque tempora explicabo at porro earum repudiandae. Eligendi cum quasi
+                ratione qui saepe fugiat quis quod!
+                Error odit, quaerat officiis quidem adipisci deserunt cumque ipsum eius corporis rerum.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
