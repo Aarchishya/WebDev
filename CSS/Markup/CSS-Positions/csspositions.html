@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+        /* CSS positions:relative,static(Default),absolute,sticky,fixed */
+        .container {
+            border: 2px solid pink;
+            height: 3444px;
+            background-color: rgb(239, 222, 248);
+
+        }
+
+        .box {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border: 2px solid purple;
+            margin: 4px;
+        }
+
+        #box3 {
+            /* relative is relative to it's original position */
+            position: relative;
+            top: 20px;
+            left: 7px;
+        }
+
+        #box4 {
+            /* absolute is accd to it's parent */
+            position: absolute;
+            top: 20px;
+            left: 7px;
+
+        }
+
+        #box5 {
+            position: fixed;
+            right: 80px;
+            bottom: 2px;
+        }
+
+        /* If you make a  particular element inside a container as fixed, then irrespective of container height, as we scroll, the element stays at the same position till you scroll to end of web page. */
+
+        /* If you make an element as sticky and if its inside a container, then as you scroll, the element will be in the same position until the container height. While scrolling, if the container is also scrolled down, then the sticky element in the container will also move top with container. */
+
+        /* i.e., sticky will be fixed only till the end of the container, But fixed will be fixed until the end of web page. */
+        #box2{
+            position: sticky;
+            top: 10px;
+            background-color: snow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+    </div>
+
+
+</body>
+
+</html>
