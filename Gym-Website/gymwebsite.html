@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness Website</title>
+    <link rel="stylesheet" href="Gym.css">
+    <style>
+        /*CSS Reset*/
+        body {
+
+            margin: 0px;
+            padding: 0px;
+            background: url('gym.jpg');
+            height: 1090px;
+            color: honeydew;
+            font-family: monospace
+        }
+
+        .left {
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            position: absolute;
+            left: 19px;
+            top: -4px;
+            display: inline-block;
+            line-height: 0px;
+            font-size: 15px;
+            font-weight: bold;
+            /* border: 2px solid rgb(250, 196, 236); */
+        }
+
+        .left img {
+            width: 104px;
+            filter: invert(5%);
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .middle {
+            display: block;
+            width: 53%;
+            margin: 5px auto;
+            /* border: 2px solid red; */
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 14px;
+            display: inline-block;
+            /* border: 2px solid greenyellow; */
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 19px;
+
+        }
+
+        .navbar li a {
+            color: honeydew;
+            text-decoration: none;
+            padding: 14px 13px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+            margin: 1px 8px;
+            color: whitesmoke;
+            background-color: black;
+            padding: 5px 5px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(2, 2, 39);
+        }
+
+        .container {
+            border: 2px solid grey;
+            margin: 107px 35px;
+            padding: 12px;
+            border-radius: 7px;
+            width: 30%;
+
+        }
+
+        .form-group input {
+            margin: 5px auto;
+            padding: 4px;
+            border: 2px solid black;
+            width: 230px;
+            text-align: center;
+            display: block;
+            border-radius: 8px;
+            font-family: monospace
+        }
+
+        .container h1 {
+            text-align: center;
+            font-family: monospace
+        }
+
+        .container button {
+            display: block;
+            width: 63%;
+            margin: 5px auto;
+            font-size: unset;
+            font-family: monospace;
+
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left for logo -->
+        <div class="left">
+            <img src="gym-logo.png" alt="logo">
+            <div>Cult Fitness</div>
+        </div>
+        <!-- Middle for navbar -->
+        <div class="middle">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <!-- Right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
