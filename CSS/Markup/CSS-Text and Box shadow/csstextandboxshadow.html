@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            margin: 7px;
+            padding: 23px 12px;
+            border: 2px solid rebeccapurple;
+            background-color: lavender;
+            /* box-shadow: 5px 5px 5px 5px rgb(117, 1, 117,0.6); */
+            /* box-shadow: inset 5px 5px palevioletred; */
+            box-shadow: 5px 5px palevioletred,5px 5px blueviolet;
+
+        }
+        .card h2{
+            text-shadow: 2px 2px rgb(231, 149, 252);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam natus doloremque quaerat
+                voluptatibus? Hic sequi quis dignissimos laborum omnis accusantium modi, nisi, quaerat adipisci quos sit
+                quisquam nobis labore cumque?</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam natus doloremque quaerat
+                voluptatibus? Hic sequi quis dignissimos laborum omnis accusantium modi, nisi, quaerat adipisci quos sit
+                quisquam nobis labore cumque?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam natus doloremque quaerat
+                voluptatibus? Hic sequi quis dignissimos laborum omnis accusantium modi, nisi, quaerat adipisci quos sit
+                quisquam nobis labore cumque?</p>
+        </div>
+        <div class="card" id="card4">
+            <h2>Card4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam natus doloremque quaerat
+                voluptatibus? Hic sequi quis dignissimos laborum omnis accusantium modi, nisi, quaerat adipisci quos sit
+                quisquam nobis labore cumque?</p>
+        </div>
+    </div>
+</body>
+
+</html>
