@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        .items{
+            border: 2px solid blueviolet;
+            background-color: cornsilk;
+            padding: 20px;
+        }
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        #navbar{
+         grid-area: navbar;
+        }
+        #section{
+        grid-area: section;
+        }
+        #aside{
+         grid-area: aside;
+        }
+        footer{
+         grid-area:footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="items">
+            HOME ABOUT SERVICES HELP 
+        </div>
+        <div id="section" class="items">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident quam incidunt sint neque distinctio corporis ad labore? Inventore maxime mollitia culpa ducimus porro similique repellat a quasi sunt obcaecati.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident quam incidunt sint neque distinctio corporis ad labore? Inventore maxime mollitia culpa ducimus porro similique repellat a quasi sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident quam incidunt sint neque distinctio corporis ad labore? Inventore maxime mollitia culpa ducimus porro similique repellat a quasi sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident quam incidunt sint neque distinctio corporis ad labore? Inventore maxime mollitia culpa ducimus porro similique repellat a quasi sunt.
+        </div>
+        <div id="aside" class="items">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident quam incidunt sint neque distinctio corporis ad labore? Inventore maxime mollitia culpa ducimus porro similique repellat a quasi sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident quam incidunt sint neque distinctio corporis ad labore? Inventore maxime mollitia culpa ducimus porro similique repellat a quasi sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident quam incidunt sint neque distinctio corporis ad labore? Inventore maxime mollitia culpa ducimus porro similique repellat a quasi sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi provident quam incidunt sint neque distinctio corporis ad labore? Inventore maxime mollitia culpa ducimus porro similique repellat a quasi sunt.
+        </div>
+        <footer class="items">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, dicta ipsam quod sit fuga eos architecto dolorum quo, hic sunt laborum ea iusto tenetur omnis voluptates, commodi adipisci eum eveniet.
+        </footer>
+        <!-- <div class="items">items1</div>
+        <div class="items">items2</div>
+        <div class="items">items3</div>
+        <div class="items">items4</div>
+        <div class="items">items5</div>
+        <div class="items">items6</div>
+        <div class="items">items7</div>
+        <div class="items">items8</div>
+        <div class="items">items9</div>
+        <div class="items">items10</div>
+        <div class="items">items11</div>
+        <div class="items">items12</div>
+        <div class="items">items13</div>
+        <div class="items">items14</div> -->
+    </div>
+    
+</body>
+</html>
