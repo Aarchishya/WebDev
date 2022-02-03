@@ -23,6 +23,38 @@
             console.log("Hello Friend , " + friends[index]);
             
         }
+        // friends.forEach(function f(element)
+        // {
+        //     console.log("Hello Friend ," + element + " to modernize javascript")
+        // });
+        // for(element of friends){
+        //     console.log("Hello Friend ," + element + " to modernize JavaScript");
+        // }
+
+        // to iterate over objects in javascript 
+        let employee={
+            name:"Aarchishya",
+            age:20,
+            gender:"female"
+        }
+        for(key in employee)
+        {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+        // while loop 
+        let j=0;
+        while(j<4)
+        {
+            console.log(`${j} is less than 4`);
+            j++;
+        }
+        let k=30;
+        do{
+            console.log(`${k} is less than 4`);
+            k++;
+        }
+            while(k<4);
+
     </script>
     
 </body>
